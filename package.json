@@ -1,0 +1,24 @@
+{
+  "name": "ksapp",
+  "version": "1.0.0",
+  "description": "Kisan Network App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Kushal Arora <kushalarora92@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "https": "^1.0.0",
+    "mongoose": "^4.6.0",
+    "morgan": "^1.7.0",
+    "nexmo": "^1.0.0-beta-7",
+    "url": "^0.11.0"
+  }
+}

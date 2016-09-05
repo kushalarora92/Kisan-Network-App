@@ -1,0 +1,19 @@
+<!-- Container Template / Main Template for the app -->
+
+<div class="container-fluid text-center">
+	<div class="well">
+		<h1>Kisan Network App</h1>
+		<div class="row">
+			<div class="col-xs-6 tab-header" ui-sref="home.contacts" ng-class=" { 'selected' : getCurrentStateName() != 'home.messages'}">
+				Contacts
+			</div>
+			<div class="col-xs-6 tab-header" ui-sref="home.messages" ng-class=" { 'selected' : getCurrentStateName() == 'home.messages'}">
+				Messages
+			</div>
+		</div>
+	</div>
+
+	<div class="well">
+		<div ui-view> </div>
+	</div>
+</div>

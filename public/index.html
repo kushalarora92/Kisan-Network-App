@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+	<title>Kisan Network Contacts App </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	
+</head>
+<body class="bg-color-grey">
+
+	<!-- Loader Imager -->
+	<div class="loader" ng-if="isLoading || manualLoading">
+	  <ng-include src="'img/balls.svg'"></ng-include>
+	</div>
+	
+	<!-- Routing -->
+	<div ui-view> </div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+	<script src="core.js"></script>
+	
+	<script src="./js/LoaderInterceptor.js"></script>
+	<script src="./js/ContactsService.js"></script>
+	<script src="./js/MessagesService.js"></script>
+
+	<script src="./js/HomeCtrl.js"></script>
+	<script src="./js/ContactsCtrl.js"></script>
+	<script src="./js/MessagesCtrl.js"></script>
+	<script src="./js/ContactInfoCtrl.js"></script>
+	<script src="./js/ComposeCtrl.js"></script>
+		
+</body>
+</html>

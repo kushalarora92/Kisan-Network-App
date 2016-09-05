@@ -1,0 +1,27 @@
+<!-- Compose page template, from where OTP can be sent -->
+
+<div class="contact padding-sm">
+	<div class="row">
+		<div class="col-xs-2 col-sm-1">
+			<img src="./img/ph40x40.png" alt="Contact Image" class="img-circle" width="40">
+		</div>
+		<div class="col">
+			{{contactInfo.firstName}} {{contactInfo.lastName}} <br/>
+			{{contactInfo.contact}}
+		</div>
+	</div>
+
+	<div class="row margin-top-lg">
+		<div class="col-xs-12">
+			<input disabled class="form-control" ng-model = "data.message" ng-model="data.message"></textarea>
+		</div>
+		
+	</div>
+
+
+	<div class="row margin-top-lg">
+		<div class="col-xs-12">
+			<button type="button" class="btn btn-primary btn-lg btn-block" ng-click="sendMessage()">Send OTP</button>
+		</div>
+	</div>
+</div>

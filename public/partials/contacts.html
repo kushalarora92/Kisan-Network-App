@@ -1,0 +1,18 @@
+<!-- Template to display list of contacts -->
+
+<div>
+	<div ng-if="showInfo">{{contacts}}</div>
+	<div ng-if="!showInfo">
+		<div ng-repeat="contact in contacts" ui-sref="home.contactInfo({index : $index})" class="contact"> 
+			<div class="row">
+				<div class="col-xs-2 col-sm-1">
+					<img src="./img/ph40x40.png" alt="Contact Image" class="img-circle" width="40">
+				</div>
+				<div class="col">
+					{{contact.firstName}} {{contact.lastName}}
+				</div>
+			</div>	
+			 
+		</div>
+	</div>
+</div>

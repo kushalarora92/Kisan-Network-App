@@ -1,0 +1,18 @@
+<!-- Template for displaying info of a particular selected Contact -->
+
+<div class="contact row">
+	<div class="col-xs-2 col-sm-1">
+		<img src="./img/ph40x40.png" alt="Contact Image" class="img-circle" width="40">
+	</div>
+
+	<div class="col-xs-5 col-sm-6">
+		{{contactInfo.firstName}} {{contactInfo.lastName}} <br/>
+		{{contactInfo.contact}}
+	</div>
+
+	<div class="compose col-xs-4 pull-right">
+		<button type="button" class="btn btn-primary pull-right" ui-sref="home.compose({index : index})">
+			Send Message
+		</button>
+	</div>
+</div>

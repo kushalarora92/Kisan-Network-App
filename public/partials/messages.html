@@ -1,0 +1,12 @@
+<!-- View Messages stored in MongoDB -->
+
+<div>
+	<div ng-if="showInfo" class="message">{{messages}}</div>
+	<div ng-if="!showInfo">
+		<div ng-repeat="message in messages | orderBy: '-' track by $index" class="message">
+			{{message.firstName}} {{message.lastName}} <br/>
+			{{getFormatedDate(message.date)}} <br/>
+			<span class="color-black" ng-if="message.otp"> OTP : </span> {{message.otp}}
+		</div>
+	</div>
+</div>
