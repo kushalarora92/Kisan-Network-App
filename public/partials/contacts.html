@@ -5,11 +5,9 @@
 	<div ng-if="!showInfo">
 		<div ng-repeat="contact in contacts" ui-sref="home.contactInfo({index : $index})" class="contact"> 
 			<div class="row">
-				<div class="col-xs-2 col-sm-1">
+				<div class="col-xs-12">
 					<img src="./img/ph40x40.png" alt="Contact Image" class="img-circle" width="40">
-				</div>
-				<div class="col">
-					{{contact.firstName}} {{contact.lastName}}
+					<span class="margin-left-sm">{{contact.firstName}} {{contact.lastName}}
 				</div>
 			</div>	
 			 
